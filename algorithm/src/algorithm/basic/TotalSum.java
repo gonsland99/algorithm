@@ -4,22 +4,25 @@ import java.util.Scanner;
 
 public class TotalSum {
 	public static void main(String[] args) {
-		//1~n±îÁö ¼öÀÇ ÃÑÇÕ
+		//1~nï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		Scanner sc = new Scanner(System.in);
-		int a = 1;
+		System.out.println("1ë¶€í„° nê¹Œì§€ í•© êµ¬í•˜ê¸°");
+		System.out.print("nì˜ ê°’: "); int n = sc.nextInt();
+
 		int sum = 0; 
-		System.out.println("1ºÎÅÍ n±îÁö ÃÑÇÕ ±¸ÇÏ´Â ÇÁ·Î±×·¥");
-		System.out.print("nÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä: "); int n = sc.nextInt();
+		for(int i=1; i<=n; i++) {
+			sum += i;
+			if(i<n) System.out.print(i+" + ");
+			else System.out.print(i+" = ");
+		}
 		/*
 		while(a <= n) {
 			sum += a;
 			a++;
 		}
 		*/
-		for(int i=1; i<=n; i++)
-			sum += i;
-			
-		System.out.println("1ºÎÅÍ "+n+"±îÁö ÃÑÇÕ: "+sum);
+		System.out.println(sum);
+		//System.out.println("1ë¶€í„° "+n+"ê¹Œì§€ í•©: "+sum);
 		
 		
 	}
