@@ -2,19 +2,27 @@ package algorithm.basic;
 
 import java.util.Scanner;
 
-public class MaxValue {
+public class MaxValue extends MaxValueMethod{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("ÃÖ´ë°ª ±¸ÇÏ´Â ÇÁ·Î±×·¥");
-		System.out.print("1¹øÂ° ¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä: "); int a = sc.nextInt();
-		System.out.print("2¹øÂ° ¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä: "); int b = sc.nextInt();
-		System.out.print("3¹øÂ° ¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä: "); int c = sc.nextInt();
+		System.out.println("ì„¸ì •ìˆ˜ ì¤‘ ìµœëŒ€ê°’ êµ¬í•˜ê¸°");
+		System.out.print("1ë²ˆì§¸ ì •ìˆ˜ ì…ë ¥: "); int a = sc.nextInt();
+		System.out.print("2ë²ˆì§¸ ì •ìˆ˜ ì…ë ¥: "); int b = sc.nextInt();
+		System.out.print("3ë²ˆì¬ ì •ìˆ˜ ì…ë ¥: "); int c = sc.nextInt();
+		System.out.print("4ë²ˆì¬ ì •ìˆ˜ ì…ë ¥: "); int d = sc.nextInt();
 		
+		//ìƒì† ë° ê°ì²´ë¥¼ ì‚¬ìš©í•œ ìµœëŒ€ê°’ ë¹„êµ
+		MaxValueMethod m3 = new MaxValueMethod();
+		//int max = m3.max3(a, b, c);
+		int max = m3.max4(a, b, c, d);
+		
+		/*
+		//ìƒì† ì‚¬ìš©í•˜ê¸° ì „ ê°™ì€í˜ì´ì§€ ë‚´ êµ¬í˜„
 		int max = a;
 		if(b > max) max = b;
 		if(c > max) max = c;
-		
-		System.out.println("3°³ÀÇ ¼ö Áß ÃÖ´ë°ªÀº: " + max);
+		*/
+		System.out.println("ìµœëŒ€ê°’ì€: " + max);
 	}
 }
