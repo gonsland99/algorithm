@@ -3,7 +3,7 @@ package algorithm.basic;
 import java.util.Scanner;
 
 public class MaxValueArray {
-	//max°ª ÆÇº°
+	//ìµœëŒ€ê°’ í•¨ìˆ˜
 	static int maxOf(int[] a) {
 		int max = a[0];
 		for(int i=1; i<a.length; i++)
@@ -14,16 +14,16 @@ public class MaxValueArray {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		//»ç¶÷ ¼ö ÀÔ·Â
-		System.out.println("Å°ÀÇ ÃÖ´ñ°ª ±¸ÇÏ±â");
-		System.out.print("»ç¶÷ ¼ö: ");
+		
+		System.out.println("Å°ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½");
+		System.out.print("ï¿½ï¿½ï¿½ ï¿½ï¿½: ");
 		int num = sc.nextInt();
-		//Å° ÀÔ·Â
+		//Å° ï¿½Ô·ï¿½
 		int[] height = new int[num];
 		for(int i=0; i<num; i++) {
 			System.out.print("height["+i+"]:");
 			height[i] = sc.nextInt();
 		}
-		System.out.println("Á¦ÀÏ Å« Å°´Â "+maxOf(height)+"ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ Å« Å°ï¿½ï¿½ "+maxOf(height)+"ï¿½Ô´Ï´ï¿½.");
 	}
 }
