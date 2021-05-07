@@ -1,8 +1,8 @@
-package algorithm.basic;
+package algorithm.basic.array;
 
 import java.util.Scanner;
 
-public class MidValue{
+public class MidOfNum{
 	static int mid3(int a, int b, int c) {
 		if((a>b && c<b)||(a<b && c>b)) return b;
 		else if((b>a && c<a)||(b<a && c>a)) return a;
