@@ -1,10 +1,11 @@
-package algorithm.basic;
+package algorithm.basic.array;
 
 import java.util.Scanner;
 
-public class ConvRev {
+public class ConvertNum {
+	//16ì§„ìˆ˜ ë³€í™˜
 	static int Convert(int x, int r, char[] d) {
-		int digits = 0;
+		int digits = 0; //ë³€í™˜ í›„ ìë¦¿ìˆ˜
 		String dchar = "0123456789ABCDEF";
 		
 		do {
@@ -13,33 +14,33 @@ public class ConvRev {
 		}while(x!=0);
 		return digits;
 	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int no;		//º¯È¯ÇÒ Á¤¼ö
-		int cd;		//±â¼ö(Áø¼ö)
-		int dno;	//º¯È¯ÈÄ ÀÚ¸´¼ö
-		int retry;	//´Ù½Ã½ÇÇà
+		int no;		//ì •ìˆ˜
+		int cd;		//ê¸°ìˆ˜(ì§„ìˆ˜)
+		int dno;	//ë³€í™˜ í›„ ìë¦¿ìˆ˜
+		int retry;	//í”„ë¡œê·¸ë¨ ë°˜ë³µ ì—¬ë¶€
 		char[] cno = new char[16];
 		
-		System.out.println("10Áø¼ö¸¦ ´Ù¸¥Áø¼ö·Î º¯È¯ÇÏ´Â ÇÁ·Î±×·¥");
+		System.out.println("10ì§„ìˆ˜ ë³€í™˜");
 		do {
 			do {
-				System.out.print("º¯È¯ÇÏ°í ½ÍÀº ¾çÀÇÁ¤¼ö: ");
+				System.out.print("ë³€í™˜í•  10ì§„ìˆ˜: ");
 				no = sc.nextInt();
 			}while(no<0);
 			do {
-				System.out.print("¾î¶² Áø¼ö·Î º¯È¯?: ");
+				System.out.print("ë³€í™˜í•  ì§„ìˆ˜(2~16ì§„ìˆ˜): ");
 				cd = sc.nextInt();
 			}while(0>=cd || cd>16);
 			
 			dno = Convert(no, cd, cno);
 			
-			System.out.print(cd+"Áø¼ö °ªÀº: ");
+			System.out.print(cd+"ì§„ìˆ˜ë¡œ ë³€í™˜í•œ ê°’: ");
 			for(int i=dno-1; i>=0; i--)
 				System.out.print(cno[i]);
-			System.out.println("ÀÔ´Ï´Ù.");
 			
-			System.out.print("´Ù½Ã º¯È¯ÇÏ½Ã°Ú½À´Ï±î?(1.¿¹/ 2.¾Æ´Ï¿À): ");
+			System.out.print("ì¢…ë£Œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(1.ì•„ë‹ˆì˜¤/ 2.ì˜ˆ)");
 			retry = sc.nextInt();
 			System.out.println();
 		}while(retry == 1);
