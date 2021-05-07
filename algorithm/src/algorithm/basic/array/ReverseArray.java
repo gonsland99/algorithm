@@ -1,23 +1,24 @@
-package algorithm.basic;
+package algorithm.basic.array;
 
 import java.util.Scanner;
 
 public class ReverseArray {
-	//¹öºíÁ¤·Ä
+	//ë²„ë¸”ì •ë ¬
 	static void swap(int[] a,int idx1,int idx2) {
 		int t = a[idx1];
 		a[idx1] = a[idx2];
 		a[idx2] = t;
 	}
-	//¿ª¼øÁ¤·Ä
+	//ì—­ìˆœì •ë ¬(ë²„ë¸”ì •ë ¬ ì´ìš©)
 	static void reverse(int[] a) {
 		for(int i=0; i<a.length/2; i++)
 			swap(a, i, a.length-i-1);
 	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¿ä¼Ò ¼ö: ");
+		System.out.print("ìš”ì†Ÿìˆ˜: ");
 		int num = sc.nextInt();
 		
 		int[] x = new int[num];
@@ -27,8 +28,8 @@ public class ReverseArray {
 			x[i] = sc.nextInt();
 		}
 		reverse(x);
-		
-		System.out.println("¿ª¼øÀ¸·Î Á¤·Ä");
+		//ì…ë ¥í•œ ìˆœì„œëŒ€ë¡œ ì—­ìˆœì •ë ¬
+		System.out.println("======= ì—­ìˆœì •ë ¬ ê²°ê³¼ =======");
 		for(int i=0; i<num; i++)
 			System.out.println("x["+i+"] = "+x[i]);
 	}
