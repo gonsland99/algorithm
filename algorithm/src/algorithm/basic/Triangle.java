@@ -54,12 +54,12 @@ public class Triangle {
 		} while (n <= 0);
 
 		System.out.println("왼쪽 아래가 직각인 삼각형");
-		triangleLB(n); // 왼쪽 아래가 직각인 이등변삼각형
+		triangleLB(n);
 		System.out.println("왼쪽 위가 직각인 삼각형");
-		triangleLU(n); // 왼쪽 위가 직각인 이등변삼각형
+		triangleLU(n);
 		System.out.println("오른쪽 위가 직각인 삼각형");
-		triangleRU(n); // 오른쪽 위가 직각인 이등변삼각형
+		triangleRU(n);
 		System.out.println("오른쪽 아래가 직각인 삼각형");
-		triangleRB(n); // 오른쪽 아래가 직각인 이등변삼각형
+		triangleRB(n);
 	}
 }
