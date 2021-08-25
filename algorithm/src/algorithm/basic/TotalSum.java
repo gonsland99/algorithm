@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class TotalSum {
 	public static void main(String[] args) {
-		//1~n���� ���� ����
 		Scanner sc = new Scanner(System.in);
 		System.out.println("1부터 n까지 합 구하기");
 		System.out.print("n의 값: "); int n = sc.nextInt();
