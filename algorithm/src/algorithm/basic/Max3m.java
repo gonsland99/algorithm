@@ -10,6 +10,7 @@ public class Max3m {
 		return max;
 	}
 	public static void main(String[] args) {
+		
 		System.out.println(max3(1,2,3));
 		System.out.println(max3(3,2,1));
 		System.out.println(max3(1,3,2));
