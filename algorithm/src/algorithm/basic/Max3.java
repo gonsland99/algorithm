@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Max3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
 		System.out.println("세정수 중 최댓값 구하기");
 		//순차적 구조
 		System.out.print("a: "); int a = sc.nextInt();
