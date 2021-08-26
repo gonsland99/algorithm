@@ -18,7 +18,7 @@ public class MaxOfArray {
 		
 		int[] height = new int[num];
 		for(int i=0; i<num; i++) {
-			System.out.print("사람"+(i+1)+"의 키: ");
+			System.out.print((i+1)+"번째 사람의 키: ");
 			height[i] = sc.nextInt();
 		}
 		System.out.println("가장 큰 키는 "+maxOf(height)+" 입니다.");
